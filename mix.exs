@@ -17,7 +17,7 @@ defmodule DistilleryExperiment.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [mod: {DistilleryExperiment, []},
-     applications: [:phoenix, :phoenix_pubsub, :cowboy, :logger, :gettext]]
+     applications: [:phoenix, :phoenix_pubsub, :cowboy, :logger, :gettext, :distillery]]
   end
 
   # Specifies which paths to compile per environment.
