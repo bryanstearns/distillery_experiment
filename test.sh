@@ -7,7 +7,7 @@ set -x # echo all commands
 DEPLOY=/tmp/deploy
 
 # Clean up from last time
-pkill -f distillery_experiment\"\ \"console\" || true
+pkill -f /tmp/deploy/releases
 rm -rf /tmp/deploy
 rm -rf _build/prod/rel
 mkdir $DEPLOY
