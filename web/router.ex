@@ -5,7 +5,8 @@ defmodule DistilleryExperiment.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/api", DistilleryExperiment do
+  scope "/", DistilleryExperiment do
     pipe_through :api
+    get "/*path", VersionController, :index
   end
 end
